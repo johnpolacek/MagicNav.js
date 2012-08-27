@@ -1,0 +1,116 @@
+/*  ==========================================================================
+    RESET / DEFAULTS
+    ========================================================================== */
+
+/*  normalize.css - https://github.com/necolas/normalize.css  */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}audio,canvas,video{display:inline;zoom:1;}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}body,button,input,select,textarea{font-family:sans-serif;}a{color:#00e;}a:visited{color:#551a8b;}a:focus{outline:none;}a:hover,a:active{outline:0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}blockquote{margin:1em 40px;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}pre,code,kbd,samp{font-family:monospace, serif;_font-family:'courier new', monospace;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:none;}q:before,q:after{content:none;}small{font-size:75%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}ul,ol{margin:1em 0;padding:0 0 0 40px;}dd{margin:0 0 0 40px;}nav ul,nav ol{list-style:none;list-style-image:none;}img{border:0;-ms-interpolation-mode:bicubic;}svg:not(:root){overflow:hidden;}fieldset{margin:0 2px;padding:.35em .625em .75em;}legend{border:0;margin-left:-7px;}button,input,select,textarea{font-size:100%;vertical-align:middle;margin:0;}button,input{line-height:normal;overflow:visible;}table button,table input{overflow:auto;}button,html input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}audio:not([controls]),[hidden]{display:none;}body,figure,form{margin:0;}
+
+/* apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* border-box polyfill for IE 6/7:https://github.com/Schepp/box-sizing-polyfill#readme  */
+* { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; *behavior:url(boxsizing.htc); }
+
+
+/*  ==========================================================================
+    PRIMARY STYLES
+    ========================================================================== */
+
+body { background:#eee; line-height:1.2; font-size:16px; color:#222;}
+.wrapper { padding:20px 50px; width:900px; margin:0 auto; background:#fff; border-left:solid 4px #ddd; border-right:solid 4px #ddd;}
+header { padding-bottom:10px; border-bottom:solid 1px #ddd;}
+section {margin-bottom:40px;border-bottom:solid 1px #ddd;}
+a, a:visited { color:#333; cursor:pointer; font-style:italic; }
+a:hover { color:#000; }
+a:focus, a:hover, a:active { outline:0; }
+ul {list-style:none; margin-bottom:40px;}
+li {margin-bottom:10px;}
+h1 {font-size:4em; margin:0 0 10px; font-weight:normal; font-family:'Courgette', cursive; }
+h2 { font-size:1.5em; margin:0 0 10px; font-weight:normal; font-family:'Courgette', cursive; }
+dt {margin-top:30px;}
+.magicnav-link { display:block; margin-bottom:20px;}
+iframe {margin-right:10px; position:relative; top:10px;}
+.author {margin:0 0 20px;}
+.demo-btn {
+  text-transform:uppercase;
+  font-style:normal;
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+  background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color:#ededed;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:2px solid #dcdcdc;
+  display:inline-block;
+  color:#777777;
+  font-family:arial;
+  font-size:30px;
+  font-weight:bold;
+  padding:6px 14px;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #ffffff;
+}.demo-btn:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+  background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color:#dfdfdf;
+}.demo-btn:active {
+  position:relative;
+  top:1px;
+}
+
+/*  ==========================================================================
+    MEDIA QUERIES
+    ========================================================================== */
+
+@media only screen and (min-width:35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+/*  ==========================================================================
+    HELPERS
+    ========================================================================== */
+
+/* For image replacement */
+.ir { display:block; border:0; text-indent:-999em; overflow:hidden; background-color:transparent; background-repeat:no-repeat; text-align:left; direction:ltr; *line-height:0; }
+.ir br { display:none; }
+
+/* Hide from both screenreaders and browsers:h5bp.com/u */
+.hidden { display:none !important; visibility:hidden; }
+
+/* Hide only visually, but have it available for screenreaders:h5bp.com/v */
+.visuallyhidden { border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard:h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip:auto; height:auto; margin:0; overflow:visible; position:static; width:auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility:hidden; }
+
+/* Contain floats:h5bp.com/q */
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clearfix { *zoom:1; }
+
+
+/*  ==========================================================================
+    PRINT
+    ========================================================================== */
+
+@media print {
+  * { background:transparent !important; color:black !important; box-shadow:none !important; text-shadow:none !important; filter:none !important; -ms-filter:none !important; } /* Black prints faster:h5bp.com/s */
+  a, a:visited { text-decoration:underline; }
+  a[href]:after { content:" (" attr(href) ")"; }
+  abbr[title]:after { content:" (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border:1px solid #999; page-break-inside:avoid; }
+  thead { display:table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside:avoid; }
+  img { max-width:100% !important; }
+  @page { margin:0.5cm; }
+  p, h2, h3 { orphans:3; widows:3; }
+  h2, h3 { page-break-after:avoid; }
+}
