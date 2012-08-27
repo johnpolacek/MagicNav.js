@@ -1,5 +1,6 @@
 <h1>MagicNav.js</h1>
 <h2>The jQuery Plugin for generating nav links from page elements</h1>
+Demo Page: http://johnpolacek.github.com/MagicNav.js
 ------
 <h3>Basic Usage</h3>
 <p>Easily generate links from elements on your page. For example, generate links to all the articles on a page by linking to the article&rsquo;s h1&rsquo;s, and put them in a nav element on the page with an id of article-nav. (By default, the links will use the same text as the h1).</p>
