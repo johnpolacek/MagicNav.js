@@ -50,8 +50,6 @@
                 magicNav.settings.duration,
                 magicNav.settings.ease);
         });
-
-        return magicNav;
     };
 
 })(jQuery);

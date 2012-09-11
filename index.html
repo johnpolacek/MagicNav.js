@@ -31,7 +31,7 @@
             <h3>Basic Usage</h3>
             <p>Easily generate links from elements on your page. For example, generate links to all the articles on a page by linking to the article&rsquo;s h1&rsquo;s, and put them in a nav element on the page with an id of article-nav. (By default, the links will use the same text as the h1).</p>
             <pre>
-var magicNav = $.MagicNav($('#article-nav'),$('article h1'));
+$.MagicNav($('#article-nav'),$('article h1'));
             </pre>
             <p>The first argument to $.MagicNav is a selector for the element to which the links will be appended. The second is a selector for the elements from which the plugin should build the links. The third is a settings object (optional).</p>
             <h3>Custom Settings</h3>
@@ -45,7 +45,7 @@ var magicNav = $.MagicNav($('#article-nav'),$('article h1'));
             </ul>
             <p>Here&rsquo;s an example applying some custom options:</p>
             <pre>
-var magicNav = $.MagicNav($('#article-nav'),$('article h1'),{
+$.MagicNav($('#article-nav'),$('article h1'),{
     titles: 'data-title',
     ease: function (x, t, b, c, d) {
             // easeOutQuad
@@ -238,22 +238,20 @@ var magicNav = $.MagicNav($('#article-nav'),$('article h1'),{
               <p>Without giving you legal advice, we can still give you advice about community norms and expectations.  It won't be legal advice, but you may find it useful when talking with your lawyer or, if necessary, coming to a decision without the help of a lawyer.</p></dd></div>
             </dl>
 
-
         </section>
-
     </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
 
     <script src="js/magicnav.js"></script>
-    <script src="js/magicscroll.js"></script>
     <script>
 
-        // run MagicNav, set the nav container and nav to targets
-        $('.demo-btn').on('click',function(e){
-            e.preventDefault();
-            var magicNav = $.MagicNav($('.nav-links'),$('dt strong'),{titles:'text',offset:-10});
-        });
+      // run MagicNav, set the nav container and nav to targets
+      $('.demo-btn').on('click',function(e){
+          e.preventDefault();
+          $.MagicNav($('.nav-links'),$('dt strong'),{titles:'text',offset:-10});
+      });
 
     </script>
 
