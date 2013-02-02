@@ -1,5 +1,5 @@
 /*
-    MagicNav - The jQuery magicNav for creating magical scrollTo navigation
+    MagicNav - The jQuery plugin for creating magical scrollTo navigation
     by John Polacek (@johnpolacek)
     
     Dual licensed under MIT and GPL.

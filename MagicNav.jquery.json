@@ -1,0 +1,26 @@
+{
+    "name": "MagicNav",
+    "title": "MagicNav",
+    "description": "The jQuery Plugin for generating nav links from page elements",
+    "keywords": [
+        "navigation",
+        "menu",
+        "nav"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "John Polacek",
+        "url": "http://johnpolacek.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url":"https://github.com/johnpolacek/MagicNav.js/blob/master/README.md"
+        }
+    ],
+    "homepage": "http://johnpolacek.github.com/MagicNav.js/",
+    "demo": "http://johnpolacek.github.com/MagicNav.js/",
+    "dependencies": {
+        "jquery": ">=1.7.2"
+    }
+}
